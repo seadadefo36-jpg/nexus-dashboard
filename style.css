@@ -2604,3 +2604,258 @@ body {
         padding: 16px !important;
     }
 }
+
+/* ============================================
+   NEXUS - FINAL MOBILE OVERRIDE
+   ============================================ */
+
+@media screen and (max-width: 1024px) {
+
+    html,
+    body {
+        width: 100% !important;
+        max-width: 100% !important;
+        overflow-x: hidden !important;
+    }
+
+    body {
+        display: block !important;
+        grid-template-columns: none !important;
+        grid-template-rows: none !important;
+    }
+
+    /* SIDEBAR */
+    .sidebar {
+        position: fixed !important;
+        top: 0 !important;
+        left: 0 !important;
+        bottom: 0 !important;
+
+        width: 280px !important;
+        height: 100vh !important;
+
+        transform: translateX(-100%) !important;
+        z-index: 10000 !important;
+    }
+
+    .sidebar.active {
+        transform: translateX(0) !important;
+    }
+
+    .sidebar-close {
+        display: block !important;
+    }
+
+    /* HAMBURGER */
+    .hamburger {
+        display: flex !important;
+        align-items: center !important;
+        justify-content: center !important;
+    }
+
+    /* MAIN */
+    .main-content {
+        display: block !important;
+        width: 100% !important;
+        max-width: 100% !important;
+        min-width: 0 !important;
+
+        margin: 0 !important;
+        padding: 0 !important;
+
+        grid-column: auto !important;
+        grid-row: auto !important;
+    }
+
+    /* HEADER */
+    .header {
+        width: 100% !important;
+        max-width: 100% !important;
+        min-width: 0 !important;
+
+        padding: 12px 16px !important;
+
+        display: flex !important;
+        align-items: center !important;
+        justify-content: space-between !important;
+
+        gap: 10px !important;
+    }
+
+    .header-left {
+        flex: 1 !important;
+        min-width: 0 !important;
+    }
+
+    .header-right {
+        flex-shrink: 0 !important;
+        min-width: 0 !important;
+        gap: 8px !important;
+    }
+
+    /* SEARCH */
+    .search-container {
+        display: none !important;
+    }
+
+    /* PROFILE */
+    .profile-name {
+        display: none !important;
+    }
+
+    /* CONTENT */
+    .content {
+        width: 100% !important;
+        max-width: 100% !important;
+        min-width: 0 !important;
+
+        padding: 20px 16px !important;
+        margin: 0 !important;
+    }
+
+    /* DASHBOARD */
+    .page {
+        width: 100% !important;
+        max-width: 100% !important;
+        min-width: 0 !important;
+    }
+
+    .page-header {
+        width: 100% !important;
+        margin-bottom: 24px !important;
+    }
+
+    /* STAT CARDS */
+    .stats-grid {
+        width: 100% !important;
+        max-width: 100% !important;
+        min-width: 0 !important;
+
+        grid-template-columns: 1fr !important;
+    }
+
+    .stat-card {
+        width: 100% !important;
+        max-width: 100% !important;
+        min-width: 0 !important;
+    }
+
+    /* CHARTS */
+    .charts-section {
+        width: 100% !important;
+        max-width: 100% !important;
+        min-width: 0 !important;
+
+        grid-template-columns: 1fr !important;
+    }
+
+    .chart-card {
+        width: 100% !important;
+        max-width: 100% !important;
+        min-width: 0 !important;
+        overflow: hidden !important;
+    }
+
+    /* SETTINGS */
+    .settings-container {
+        width: 100% !important;
+        max-width: 100% !important;
+        min-width: 0 !important;
+
+        display: flex !important;
+        flex-direction: column !important;
+
+        gap: 0 !important;
+    }
+
+    .settings-sidebar {
+        width: 100% !important;
+        max-width: 100% !important;
+
+        display: flex !important;
+        flex-direction: row !important;
+
+        border-right: none !important;
+        border-bottom: 1px solid var(--border-color) !important;
+
+        overflow-x: auto !important;
+        overflow-y: hidden !important;
+
+        padding: 10px !important;
+        gap: 6px !important;
+    }
+
+    .settings-item {
+        flex: 0 0 auto !important;
+        white-space: nowrap !important;
+        padding: 10px 14px !important;
+    }
+
+    .settings-content {
+        width: 100% !important;
+        max-width: 100% !important;
+        min-width: 0 !important;
+
+        padding: 20px 16px !important;
+        overflow: visible !important;
+    }
+
+    .settings-section,
+    .settings-form,
+    .form-group {
+        width: 100% !important;
+        max-width: 100% !important;
+        min-width: 0 !important;
+    }
+
+    .form-group input,
+    .form-group select,
+    .form-group textarea {
+        width: 100% !important;
+        max-width: 100% !important;
+    }
+
+    /* TABLES */
+    .table-container {
+        width: 100% !important;
+        max-width: 100% !important;
+        overflow-x: auto !important;
+    }
+
+    /* PRODUCTS */
+    .products-grid {
+        grid-template-columns: 1fr !important;
+    }
+
+    /* MESSAGES */
+    .messages-container {
+        width: 100% !important;
+        grid-template-columns: 1fr !important;
+    }
+
+    .contacts-sidebar {
+        display: none !important;
+    }
+}
+
+
+/* SMALL PHONE */
+@media screen and (max-width: 480px) {
+
+    .content {
+        padding: 16px 12px !important;
+    }
+
+    .header {
+        padding: 10px 12px !important;
+    }
+
+    .page-title {
+        font-size: 17px !important;
+    }
+
+    .settings-content {
+        padding: 18px 14px !important;
+    }
+}
+
